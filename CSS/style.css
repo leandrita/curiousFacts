@@ -1,36 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  font-family: 'Caveat', cursive;
 }
 
 header {
-  height: 20%;
+  margin: 1rem;
 }
 
 .logo {
   width: 20%;
-  
+}
+
+body{
+  background-color: #CEEBC7;
+}
+
+.description {
+  margin:0;
+  height: 21vh;
+  background-image: url("/img/nube.png");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.description h1 {
+  margin:0%;
+}
+
+#fact-button{
+  display: block;
+  border-radius: 40px;
+  max-width: 300px; 
+  margin: 2rem auto;
+height: 40px;
+font-family: 'Caveat';
+font-weight: 700;
+font-size: 20px;
 }
 
 main {
   max-width: 600px;
   margin:0 auto;
-  padding: 20px;
   display: flex;
   flex-direction: column;
 
 }
 
-button {
-  display: block;
-  border-radius: 40px;
-  max-width: 200px; 
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
 #facts-container {
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;

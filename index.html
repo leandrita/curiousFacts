@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>AgileAlchemists</title>
-    <link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -15,23 +15,27 @@
         <img src="/img/logo.png" class="logo">
     </header>
     <main>
+        <div class="description">
+            <h1 >Welcome to our page!</h1>
+            <p>Here you will be able to read the most amazing random curious 
+            facts and add them to your own favorites list so you can keep reread them whenever you want.</p>
+        </div>
         <section>
-            <h1>Which curious fact would you want to know today?</h1>
-            <button id = "fact-button">Curious Fact</button>
+            <button id = "fact-button" onclick="getFact()">Click here to read a random curious fact!</button>
             <!-- para la caja de texto -->
-            <ul id="facts-container"></ul>
+            <div id="fact-container"></div>
         </section>
         <section>
             <h2>My favorites</h2>
             <!-- para la caja de texto -->
-            <ul class="favorites-list"></ul>
+            <ul id="favorites-list"></ul>
         </section>
     </main>
     <footer>
         <p>Since 2023</p>
     </footer>
 
-    <script src="./functions.js"></script>
+    <script src="./JS/functions.js"></script>
 </body>
 
 </html>
