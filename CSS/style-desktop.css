@@ -1,0 +1,89 @@
+@media screen and (min-width: 768px) {
+  body {
+    width: 90%;
+    height: 10%;
+  }
+  header {
+    height: 2vh;
+    margin-bottom: 0%;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .description {
+    margin-top: 0%;
+    margin-left: 7rem;
+    background-image: url("/img/nube.png");
+    background-size: 90%;
+    font-size: 18px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+  }
+
+  .main-containers {
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #fact-button {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+
+  #fact-container {
+    position: absolute;
+    margin: 0%;
+    padding: 1.2%;
+    width: 40%;
+    height: 30%;
+    transform: translate(-40%, -5%);
+    font-size: 20px;
+  }
+
+  .favorite {
+    width: 2rem;
+  }
+
+  h2 {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    background-size: 10rem;
+    padding: 35px;
+    transform: translate(-30%, -100%);
+  }
+
+  #favorites-list {
+    position: absolute;
+    margin: 0%;
+    padding: 1rem;
+    width: 40%;
+    height: 30%;
+    transform: translate(70%, -5%);
+    font-size: 20px;
+  }
+
+  #favorites-list li {
+    margin-left: 0.6rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+}
