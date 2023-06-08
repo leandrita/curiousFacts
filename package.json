@@ -1,4 +1,20 @@
 {
+  "name": "curiousfacts",
+  "version": "1.0.0",
+  "description": "jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "coriousFacts"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "\"Denise Khurlopian\"",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^29.5.0"
   }
