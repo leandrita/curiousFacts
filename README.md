@@ -1,5 +1,5 @@
 # CuriousFacts
--Proposal_
+
 The Useless Facts company wants to develop the front-end part of an application that returns curious facts that nobody cares about, the idea is that within the main page, we can see each curious fact that the https://uselessfacts API returns. jsph.pl/ and if we like a curious fact, we can save it within a favorite space on the same main page.
 
 ---
@@ -17,7 +17,7 @@ The Useless Facts company wants to develop the front-end part of an application 
     To install the project, you must clone the repository with the following link:
 
 ---
-## How it works
+# How it works
     Upon entering the page, you will be able to see randomly selected curious facts, by clicking the button.
 In case one of them has been interesting to you, you can select it by clicking the star that appears next to the text and that way it would be kept in the list of favorites.
 
@@ -47,5 +47,5 @@ In case one of them has been interesting to you, you can select it by clicking t
 
 ### Developers
 
-        Denise Khurlopian.
-        Leandra Bujhamer.
+Denise Khurlopian.
+Leandra Bujhamer.
