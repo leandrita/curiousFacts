@@ -132,10 +132,6 @@ footer {
     padding-top: 4rem;
   }
 
-  .logo {
-    padding: 0;
-  }
-
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
