@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style-desktop.css" />
     <title>AgileAlchemists</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <img src="/img/logo.png" class="logo">
+      <img src="/img/logo.png" class="logo" />
     </header>
     <main>
         <div class="description">
@@ -22,20 +21,20 @@
         </div>
         <section>
             <button id = "fact-button" onclick="getFact()">Click here to read a random curious fact!</button>
-            
+            <!-- para la caja de texto -->
             <div id="fact-container"></div>
         </section>
         <section>
             <h2>My favorites</h2>
-           
+            <!-- para la caja de texto -->
             <ul id="favorites-list"></ul>
         </section>
+      </div>
     </main>
     <footer>
-        <p>Since 2023</p>
+      <p>Since 2023</p>
     </footer>
 
-    <script src="./JS/functions.js"></script>
-</body>
-
+    <script src="./src/functions.js"></script>
+  </body>
 </html>
