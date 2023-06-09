@@ -1,5 +1,5 @@
-const factContainer = document.getElementById("fact-container");
-const favoritesList = document.getElementById("favorites-list");
+const factContainer = document.getElementById("randomText");
+const favoritesList = document.getElementById("favoriteText");
 
 const favoritesArray = [];
 
@@ -9,7 +9,7 @@ function fetchFact() {
 }
 
 function createFactElement(data) {
-  const factElement = document.createElement("div");
+  const factElement = document.createElement("article");
   factElement.classList.add("fact");
   factElement.innerHTML = `
     <p>${data.text}<img class="favorite" src="./img/star.png" alt="Agregar a favoritos" onclick="addToFavorites(event)"></p>
