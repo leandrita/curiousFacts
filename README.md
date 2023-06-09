@@ -5,20 +5,22 @@ The Useless Facts company wants to develop the front-end part of an application 
 ---
 # Table of Contents
 
-1. [Facility](#Facility)
-        *[Pasos para la instalación](#pasos-para-instalación)
-2. [How it works](#How-it-works)
-3. [Figma](#recursos-figma)
-        *[Figma version mobile]
+1. [Facility](#facility)
+2. [General info](#general-info)
+3. [Mockup](#mockup)
+4. [Technologies](#technologies)
+5. [Tools](#tools)
+6. [Developers](#developers)
+
 
 ---
 
 # Facility:
-    To install the project, you must clone the repository with the following link:
+To install the project, you must clone the repository with the following link: https://github.com/curiousFacts/curiousFacts.git
 
 ---
-# How it works
-    Upon entering the page, you will be able to see randomly selected curious facts, by clicking the button.
+# General info:
+Upon entering the page, you will be able to see randomly selected curious facts, by clicking the button.
 In case one of them has been interesting to you, you can select it by clicking the star that appears next to the text and that way it would be kept in the list of favorites.
 
 ---
@@ -28,14 +30,14 @@ In case one of them has been interesting to you, you can select it by clicking t
 
 ---
 
-### Technologies
+# Technologies
 <div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </div>
 
 ---
 
-### Tools
+# Tools
 <div>
 <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/>
 <img src="https://w7.pngwing.com/pngs/512/824/png-transparent-visual-studio-code-hd-logo-thumbnail.png" alt="vscode" width="40" heigth="40"/>
@@ -45,7 +47,7 @@ In case one of them has been interesting to you, you can select it by clicking t
 
 ---
 
-### Developers
+# Developers
 
-Denise Khurlopian.
-Leandra Bujhamer.
+       Denise Khurlopian.
+       Leandra Bujhamer.
