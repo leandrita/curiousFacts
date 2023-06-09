@@ -9,22 +9,24 @@
   }
 
   .logo {
-    width: 10%;
+    width: 8rem;
+    height: 3rem;
+    margin-left: 37rem;
+    border-radius: 40%;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .description {
     margin-top: 0%;
     margin-left: 7rem;
-    background-image: url("/img/nube.png");
-    background-size: 90%;
     font-size: 18px;
     background-position: center;
     display: flex;
     flex-direction: column;
+    background-size: 80%;
     align-items: center;
     text-align: center;
     padding: 100px;

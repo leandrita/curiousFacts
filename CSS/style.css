@@ -14,6 +14,7 @@ header {
 
 .logo {
   width: 20%;
+  margin-left: 9rem;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
   background-image: url("/img/nube.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   flex-direction: column;
