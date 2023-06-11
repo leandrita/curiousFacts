@@ -39,7 +39,7 @@ main {
   width: 100%;
   height: 40%;
   background-image: url("/img/nube.png");
-  background-size: 80%;
+  background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -52,9 +52,6 @@ h1 {
   margin: 0;
 }
 
-.cloud {
-}
-
 .description {
   width: 60%;
   margin: 0;
@@ -62,15 +59,11 @@ h1 {
 }
 
 .aside {
-  display: none;
-}
-
-.randomContainer {
-  height: 25%;
-}
-
-.favouriteContainer {
-  height: 35%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .randomContainer,
@@ -98,6 +91,23 @@ article {
   height: 4rem;
   background-color: RGB(255, 255, 255);
   border-radius: 0.5rem;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.randomCuriousFact,
+.favouriteCuriousFact {
+  padding: 1rem;
+}
+
+.starBtn {
+  background: none;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .imageContainer {
@@ -105,9 +115,6 @@ article {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-li {
 }
 
 footer {
@@ -173,19 +180,10 @@ footer {
     border-radius: 0.75rem;
   }
 
-  #randomText {
+  article {
     width: 40rem;
     height: 8rem;
-  }
-
-  .favouriteContainer {
-    gap: 1rem;
-    height: 65%;
-  }
-
-  #favouriteText {
-    width: 40rem;
-    height: 8rem;
+    padding: 1rem;
   }
 
   .imageContainer {
@@ -194,12 +192,12 @@ footer {
     background-size: 10rem;
   }
 
-  .caption {
+  .favouritesHeadline {
     font-size: 1.15rem;
   }
 
   footer {
     height: 15%;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 }

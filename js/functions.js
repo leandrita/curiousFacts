@@ -4,36 +4,31 @@ const fetchData = () => {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      mostrarData(data);
+      showData(data);
       console.log(data);
     })
     .catch(error => console.log(error));
 }
 
 const addToFavourites = (text) => {
-  let favouriteList = [];
+  let favouriteList = document.getElementById('favouriteList');
+  const favouriteItem = document.createElement('li');
+  favouriteItem.textContent = text;
+  favouriteItem.classList.add('favouriteItem');
+  favouriteList.appendChild(favouriteItem);
+  favouriteList.classList.add('favouriteCuriousFact');
+  favouriteCuriousFactsList.push(text);
+};
 
-  if (localStorage.getItem('favouriteList')) {
-    favouriteList = JSON.parse(localStorage.getItem('favouriteList'));
-  }
-
-  favouriteList.push(text);
-
-  localStorage.setItem('favouriteList', JSON.stringify(favouriteList));
-
-  console.log('Added to favourites');
-}
-
-const mostrarData = (data) => {
+const showData = (data) => {
   let randomText = document.getElementById('randomText');
   randomText.innerHTML = `<p>${data.text}</p>`;
-
+  randomText.classList.add('randomCuriousFact');
   let favouriteBtn = document.createElement('button');
-  favouriteBtn.textContent = 'Add to favourites';
+  favouriteBtn.innerHTML = '<img src="/img/starBtn.png">';
+  favouriteBtn.classList.add('starBtn');
   favouriteBtn.addEventListener('click', () => addToFavourites(data.text));
-
   randomText.appendChild(favouriteBtn);
-
   console.log(data);
 }
 
