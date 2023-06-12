@@ -38,7 +38,7 @@ function addToFavorites(event) {
   const favoriteText = factElement.innerText;
 
   if (favoritesArray.includes(favoriteText)) {
-    alert("Este hecho ya está en la lista de favoritos.");
+    showPopup("This fact already exists in your favorite list.");
     return;
   }
 
@@ -50,4 +50,21 @@ function addToFavorites(event) {
   favoritesList.appendChild(favoriteElement);
 }
 
+function showPopup(message) {
+  const modalElement = document.createElement("div");
+  modalElement.classList.add("modal");
+  modalElement.innerHTML = `
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>${message}</p>
+    </div>
+  `;
+
+  const closeButton = modalElement.querySelector(".close");
+  closeButton.addEventListener("click", () => {
+    modalElement.remove();
+  });
+
+  document.body.appendChild(modalElement);
+}
  module.exports = { getFact, addToFavorites, displayFact, createFactElement, fetchFact };
