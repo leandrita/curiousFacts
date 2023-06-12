@@ -1,6 +1,5 @@
 const factContainer = document.getElementById("randomText");
 const favoritesList = document.getElementById("favoriteList");
-
 const favoritesArray = [];
 
 function fetchFact() {
@@ -38,7 +37,6 @@ function getFact() {
 }
 
 function addToFavorites(data) {
-  // const factElement = event.target.parentNode;
   const favoriteText = data.text;
 
   if (favoritesArray.includes(favoriteText)) {
@@ -50,7 +48,6 @@ function addToFavorites(data) {
 
   const favoriteElement = document.createElement("li");
   favoriteElement.textContent = favoriteText;
-
   favoritesList.appendChild(favoriteElement);
 }
 
