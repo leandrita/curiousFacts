@@ -38,15 +38,15 @@ test('createFactElement should create a fact element', () => {
   const data = { text: 'Sample fact' };
   const factElement = createFactElement(data);
 
-  expect(factElement.tagName).toBe('DIV');
-  expect(factElement.classList.contains('fact')).toBe(true);
+  expect(factElement.tagName).toBe('P');
+  expect(factElement.classList.contains('randomCuriousFact')).toBe(true);
   expect(factElement.innerHTML).toContain('Sample fact');
 });
 
 
 
 test('displayFact should update the fact container with the given fact element', () => {
-  
+
   const factContainer = document.createElement('div');
   const factElement = document.createElement('div');
   factElement.innerText = 'Sample fact';

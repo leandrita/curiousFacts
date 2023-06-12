@@ -1,5 +1,5 @@
-const factContainer = document.getElementById("fact-container");
-const favoritesList = document.getElementById("favorites-list");
+const factContainer = document.getElementById("randomText");
+const favoritesList = document.getElementById("favoriteList");
 
 const favoritesArray = [];
 
@@ -9,11 +9,15 @@ function fetchFact() {
 }
 
 function createFactElement(data) {
-  const factElement = document.createElement("div");
-  factElement.classList.add("fact");
-  factElement.innerHTML = `
-    <p>${data.text}<img class="favorite" src="./img/star.png" alt="Agregar a favoritos" onclick="addToFavorites(event)"></p>
-  `;
+  const factElement = document.createElement('p');
+  factElement.classList.add("randomCuriousFact");
+  factElement.textContent = data.text;
+  let favoriteBtn = document.createElement('button');
+  favoriteBtn.innerHTML = '<img src="/img/starBtn.png">';
+  favoriteBtn.classList.add('starBtn');
+  favoriteBtn.addEventListener('click', () => addToFavorites(data));
+  factElement.appendChild(favoriteBtn);
+  console.log(data);
   return factElement;
 }
 
@@ -33,9 +37,9 @@ function getFact() {
     });
 }
 
-function addToFavorites(event) {
-  const factElement = event.target.parentNode;
-  const favoriteText = factElement.innerText;
+function addToFavorites(data) {
+  // const factElement = event.target.parentNode;
+  const favoriteText = data.text;
 
   if (favoritesArray.includes(favoriteText)) {
     showPopup("This fact already exists in your favorite list.");
@@ -45,7 +49,7 @@ function addToFavorites(event) {
   favoritesArray.push(favoriteText);
 
   const favoriteElement = document.createElement("li");
-  favoriteElement.innerHTML = favoriteText;
+  favoriteElement.textContent = favoriteText;
 
   favoritesList.appendChild(favoriteElement);
 }
@@ -67,4 +71,5 @@ function showPopup(message) {
 
   document.body.appendChild(modalElement);
 }
- module.exports = { getFact, addToFavorites, displayFact, createFactElement, fetchFact };
+
+module.exports = { getFact, addToFavorites, displayFact, createFactElement, fetchFact };

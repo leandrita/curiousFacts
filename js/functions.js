@@ -10,25 +10,25 @@ const fetchData = () => {
     .catch(error => console.log(error));
 }
 
-const addToFavourites = (text) => {
-  let favouriteList = document.getElementById('favouriteList');
-  const favouriteItem = document.createElement('li');
-  favouriteItem.textContent = text;
-  favouriteItem.classList.add('favouriteItem');
-  favouriteList.appendChild(favouriteItem);
-  favouriteList.classList.add('favouriteCuriousFact');
-  favouriteCuriousFactsList.push(text);
+const addToFavorites = (text) => {
+  let favoriteList = document.getElementById('favoriteList');
+  const favoriteItem = document.createElement('li');
+  favoriteItem.textContent = text;
+  favoriteItem.classList.add('favoriteItem');
+  favoriteList.appendChild(favoriteItem);
+  favoriteList.classList.add('favoriteCuriousFact');
+  favoriteCuriousFactsList.push(text);
 };
 
 const showData = (data) => {
   let randomText = document.getElementById('randomText');
   randomText.innerHTML = `<p>${data.text}</p>`;
   randomText.classList.add('randomCuriousFact');
-  let favouriteBtn = document.createElement('button');
-  favouriteBtn.innerHTML = '<img src="/img/starBtn.png">';
-  favouriteBtn.classList.add('starBtn');
-  favouriteBtn.addEventListener('click', () => addToFavourites(data.text));
-  randomText.appendChild(favouriteBtn);
+  let favoriteBtn = document.createElement('button');
+  favoriteBtn.innerHTML = '<img src="/img/starBtn.png">';
+  favoriteBtn.classList.add('starBtn');
+  favoriteBtn.addEventListener('click', () => addToFavorites(data.text));
+  randomText.appendChild(favoriteBtn);
   console.log(data);
 }
 
