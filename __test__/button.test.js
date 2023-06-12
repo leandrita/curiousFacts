@@ -17,6 +17,30 @@ describe('Fact App', () => {
 
 });
 
+test('fetchFact should fetch a random fact', () => {
+    // Mock the fetch function to return a sample response
+    global.fetch = jest.fn().mockResolvedValue({
+      json: jest.fn().mockResolvedValue({ text: 'Sample fact' }),
+    });
+  
+    return fetchFact().then((result) => {
+      expect(result.text).toBe('Sample fact');
+      expect(fetch).toHaveBeenCalledWith(
+        'https://uselessfacts.jsph.pl/random.json?language=en'
+      );
+    });
+  });
+
+test('createFactElement should create a fact element', () => {
+    const data = { text: 'Sample fact' };
+    const factElement = createFactElement(data);
+  
+    expect(factElement.tagName).toBe('ARTICLE');
+    expect(factElement.classList.contains('fact')).toBe(true);
+    expect(factElement.innerHTML).toContain('Sample fact');
+  });
+
+
 test('Fact should not be repeated in the fact container', () => {
     const factData = { text: 'Random fact' };
     const factElement1 = createFactElement(factData);
