@@ -58,6 +58,11 @@
     display: block;
   }
 
+  .randomCuriousFact,
+  li {
+    font-size: 1.5rem;
+  }
+
   .imageContainer {
     padding: 3rem;
     background-position: cover;
