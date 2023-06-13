@@ -69,4 +69,4 @@ function showPopup(message) {
   document.body.appendChild(modalElement);
 }
 
-module.exports = { getFact, addToFavorites, displayFact, createFactElement, fetchFact };
+module.exports = { getFact, addToFavorites, createFactElement, fetchFact };

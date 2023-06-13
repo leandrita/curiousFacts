@@ -2,7 +2,6 @@
 const {
   getFact,
   addToFavorites,
-  displayFact,
   createFactElement,
   fetchFact,
 } = require('../src/functions.js');
@@ -21,9 +20,8 @@ describe('Fact App', () => {
 
 
 test('fetchFact should fetch a random fact', () => {
-  // Mock the fetch function to return a sample response
-  global.fetch = jest.fn().mockResolvedValue({  //función simulada se utilizará para reemplazar el comportamiento de fetch 
-    json: jest.fn().mockResolvedValue({ text: 'Sample fact' }), //simula la respuesta JSON que obtendrías de la solicitud HTTP
+  global.fetch = jest.fn().mockResolvedValue({
+    json: jest.fn().mockResolvedValue({ text: 'Sample fact' }),
   });
 
   return fetchFact().then((result) => {
