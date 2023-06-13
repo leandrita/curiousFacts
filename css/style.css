@@ -161,9 +161,6 @@ footer {
 }
 
 .close {
-  /* position: absolute;
-  top: -12px;
-  left: 16px; */
   font-size: 30px;
   cursor: pointer;
 }
