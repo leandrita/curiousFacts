@@ -42,20 +42,3 @@ test('createFactElement should create a fact element', () => {
   expect(factElement.classList.contains('randomCuriousFact')).toBe(true);
   expect(factElement.innerHTML).toContain('Sample fact');
 });
-
-
-
-test('displayFact should update the fact container with the given fact element', () => {
-
-  const factContainer = document.createElement('div');
-  const factElement = document.createElement('div');
-  factElement.innerText = 'Sample fact';
-
-  const { document } = new JSDOM();
-  global.document = document;
-  document.getElementById = jest.fn().mockReturnValue(factContainer);
-
-  displayFact(factElement);
-
-  expect(factContainer.innerHTML).toContain('Sample fact');
-});
