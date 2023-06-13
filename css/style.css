@@ -89,6 +89,7 @@ h1 {
   font-weight: 700;
   width: 15.25rem;
   height: 2.5rem;
+  margin: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.49);
 }
@@ -106,8 +107,7 @@ article {
 
 .randomCuriousFact,
 .favoriteCuriousFact {
-  padding: 1rem;
-  flex: 1;
+  margin: 1rem;
 }
 
 .starBtn {
@@ -118,9 +118,14 @@ article {
   cursor: pointer;
 }
 
+.star {
+  width: 70%;
+}
+
 .imageContainer {
+  padding: 2rem;
   background-image: url("/img/star.png");
-  background-size: 100%;
+  background-size: 8rem;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -156,9 +161,6 @@ footer {
 }
 
 .close {
-  /* position: absolute;
-  top: -12px;
-  left: 16px; */
   font-size: 30px;
   cursor: pointer;
 }

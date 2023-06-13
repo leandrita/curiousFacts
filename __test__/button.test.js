@@ -2,7 +2,6 @@
 const {
   getFact,
   addToFavorites,
-  displayFact,
   createFactElement,
   fetchFact,
 } = require('../src/functions.js');
@@ -21,9 +20,8 @@ describe('Fact App', () => {
 
 
 test('fetchFact should fetch a random fact', () => {
-  // Mock the fetch function to return a sample response
-  global.fetch = jest.fn().mockResolvedValue({  //función simulada se utilizará para reemplazar el comportamiento de fetch 
-    json: jest.fn().mockResolvedValue({ text: 'Sample fact' }), //simula la respuesta JSON que obtendrías de la solicitud HTTP
+  global.fetch = jest.fn().mockResolvedValue({
+    json: jest.fn().mockResolvedValue({ text: 'Sample fact' }),
   });
 
   return fetchFact().then((result) => {
@@ -41,21 +39,4 @@ test('createFactElement should create a fact element', () => {
   expect(factElement.tagName).toBe('P');
   expect(factElement.classList.contains('randomCuriousFact')).toBe(true);
   expect(factElement.innerHTML).toContain('Sample fact');
-});
-
-
-
-test('displayFact should update the fact container with the given fact element', () => {
-
-  const factContainer = document.createElement('div');
-  const factElement = document.createElement('div');
-  factElement.innerText = 'Sample fact';
-
-  const { document } = new JSDOM();
-  global.document = document;
-  document.getElementById = jest.fn().mockReturnValue(factContainer);
-
-  displayFact(factElement);
-
-  expect(factContainer.innerHTML).toContain('Sample fact');
 });

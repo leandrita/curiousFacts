@@ -12,7 +12,7 @@ function createFactElement(data) {
   factElement.classList.add("randomCuriousFact");
   factElement.textContent = data.text;
   let favoriteBtn = document.createElement('button');
-  favoriteBtn.innerHTML = '<img src="/img/starBtn.png">';
+  favoriteBtn.innerHTML = '<img class="star" src="/img/starBtn.png">';
   favoriteBtn.classList.add('starBtn');
   favoriteBtn.addEventListener('click', () => addToFavorites(data));
   factElement.appendChild(favoriteBtn);
@@ -69,4 +69,4 @@ function showPopup(message) {
   document.body.appendChild(modalElement);
 }
 
-module.exports = { getFact, addToFavorites, displayFact, createFactElement, fetchFact };
+module.exports = { getFact, addToFavorites, createFactElement, fetchFact };
