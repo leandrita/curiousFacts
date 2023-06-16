@@ -1,4 +1,5 @@
-
+import {jest} from '@jest/globals';
+const { JSDOM } = require('jsdom');
 const {
   getFact,
   addToFavorites,
@@ -6,6 +7,27 @@ const {
   fetchFact,
 } = require('../src/functions.js');
 
+describe('archivo functions', () => {
+  test('data se imprime', async () => {
+    //Arrange
+    const dom = await JSDOM.fromFile('index.html');
+    //Act
+    const element = dom.window.document.querySelector('h1'); //accedo al dom virtual
+    
+    //Assert
+    Assert.equal(element.text, 'Welcome to our page!');
+  })
+
+  test('data se imprime', async () => {
+    //Arrange
+    const dom = await JSDOM.fromFile('index.html');
+    //Act
+    const element = dom.window.document.getElementById('randomBtn'); //accedo al dom virtual
+    
+    //Assert
+    Assert.equal(element.innerHTML, 'Click here to read a random curious fact!');
+  })
+});
 
 describe('Fact App', () => {
   test('getFact should be a function', () => {
