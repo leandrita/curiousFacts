@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "coriousFacts"
+    "url": "curiousFacts"
   },
   "keywords": [
     "jest"
   ],
-  "author": "\"Denise Khurlopian\"",
+  "author": "Leandra Bujhamer & Denise Khurlopian",
   "license": "MIT",
   "devDependencies": {
     "@babel/preset-env": "^7.22.5",
