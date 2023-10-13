@@ -21,7 +21,9 @@ The Useless Facts company wants to develop the front-end part of an application 
 
 # Facility:
 
-To install the project, you must clone the repository with the following link: https://github.com/curiousFacts/curiousFacts.git
+1. To install the project, you must clone the repository with the following link: https://github.com/curiousFacts/curiousFacts.git
+
+2. To run the app open it in your Visual Studio Code and click "Go live". It will open a tab in your navegator in the port 5500. 
 
 ---
 
